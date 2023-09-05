@@ -64,7 +64,7 @@ public class PeliculaController {
     }
 
 
-    @CrossOrigin("http://127.0.0.1:5500")
+
     @DeleteMapping("/api/borrar/{id}")
     public ResponseEntity<peliculas> borrarPelicula(@PathVariable Long id) {
         if (id == null || repositorio.existsById(id)) {
